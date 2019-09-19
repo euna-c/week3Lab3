@@ -94,15 +94,14 @@ public class NoteServlet extends HttpServlet {
                 
            
                 
-                pw.println(writtenTitle);
-                pw.println(writtenContent);
+               // pw.println(writtenTitle);
+               // pw.println(writtenContent);
+                
+                pw.write(writtenTitle+"\n");
+                pw.write(writtenContent);
                 
                 Note n = new Note(writtenTitle, writtenContent);
                 request.setAttribute("ReadNote", n);
-                
-                
-                
-                
                 
                 
                 pw.close();
