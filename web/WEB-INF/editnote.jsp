@@ -17,11 +17,11 @@
             <h1>Simple Note Keeper</h1>
             <h2>Edit Note</h2>
            
-            <h3><b>Title:</b></h3><input type="text" name="title" placeholder="${ReadNote.title}"><br>
-            
+            <h3><b>Title:</b></h3><input type="text" name="title" value="${ReadNote.title}"><br>
             
             <h3><b>Contents:</b></h3>
-            <textarea id="txtArea" name="content" rows="5" cols="30" placeholder="${ReadNote.contents}"></textarea>
+            <input type="textbox" name="content" width="48" height="48" value="${ReadNote.contents}">
+            
             <br>
             ${result}
         </div>
